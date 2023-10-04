@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Macademy\Jumpstart\Model;
 
-class Category
+use Macademy\Jumpstart\Api\CategoryInterface;
+
+class Category implements CategoryInterface
 {
     public function getName(): string
     {
