@@ -1,1 +1,6 @@
-<h1><?= __('Hello world!') ?></h1>
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Macademy\Jumpstart\ViewModel\WelcomeMessage $welcomeMessageViewModel */
+$welcomeMessageViewModel = $block->getData('welcome_message_view_model');
+?>
+<h1><?= $welcomeMessageViewModel->getWelcomeMessage() ?></h1>

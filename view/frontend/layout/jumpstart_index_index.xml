@@ -2,7 +2,11 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block name="macademy_jumpstart_welcome" template="Macademy_Jumpstart::welcome.phtml"/>
+            <block name="macademy_jumpstart_welcome" template="Macademy_Jumpstart::welcome.phtml">
+                <arguments>
+                    <argument name="welcome_message_view_model" xsi:type="object">Macademy\Jumpstart\ViewModel\WelcomeMessage</argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>
